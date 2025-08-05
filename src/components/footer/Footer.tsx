@@ -1,8 +1,8 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from '@phosphor-icons/react'
+import {  FacebookLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-icons/react'
 
 function Footer() {
 
-    let data = new Date().getFullYear()
+    const data = new Date().getFullYear()
 
     return (
         <>
@@ -13,9 +13,17 @@ function Footer() {
                         </p>
                     <p className='text-lg'>Acesse nossas redes sociais</p>
                     <div className='flex gap-2'>
-                        <LinkedinLogo size={48} weight='bold' />
-                        <InstagramLogo size={48} weight='bold' />
-                        <FacebookLogo size={48} weight='bold' />
+                        <div className='flex gap-2'>
+	            <a href="https://www.linkedin.com/in/giulia-barreto-849a612b0/"  target="_blank">
+    	            <LinkedinLogoIcon size={48} weight='bold' />
+                  </a>
+                  <a href="https://www.instagram.com/giu_sbarreto?igsh=d25vbno0bGg1MGxp&utm_source=qr" target="_blank">
+    	            <InstagramLogoIcon size={48} weight='bold' />
+                      </a>
+                   <a href="https://www.facebook.com/share/1AjpWnzNPX/?mibextid=wwXIfr" target="_blank">
+    	           <FacebookLogoIcon size={48} weight='bold' />
+	                 </a>
+                   </div>
                     </div>
                 </div>
             </div>

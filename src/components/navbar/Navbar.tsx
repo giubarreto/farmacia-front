@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
@@ -5,11 +7,11 @@ function Navbar() {
             			   bg-orange-400 text-white'>
             
                 <div className="container flex justify-between text-lg">
-                    FarmaDelivery
+                    <Link to='/home' className="text-2xl font-bold">FarmaDelivery</Link>
 
                     <div className='flex gap-4'>
-                        Produtos
-                        Categoria
+                         Produtos
+                        <Link to='/categoria' className='hover:underline'>Categoria</Link>
                         Cadastrar Categoria
                         Sair
                     </div>
